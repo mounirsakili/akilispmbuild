@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "919928997630",
+    "project_id": "bely3-796dd",
+    "storage_bucket": "bely3-796dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919928997630:android:c667366cacd014341747af",
+        "android_client_info": {
+          "package_name": "com.belyybetojogopara.colorearbely"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919928997630-mfurmfihr3alvv8v3aieih5192orbbl5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgOr_dYSyyA_fLSLEpRzIFnQzWqN3obNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919928997630-mfurmfihr3alvv8v3aieih5192orbbl5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
