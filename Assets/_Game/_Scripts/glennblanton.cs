@@ -46,7 +46,7 @@ public class glennblanton : MonoBehaviour, IUnityAdsInitializationListener, IUni
     public static bool isApplovin = false;
     public static bool isUnityads = false;
     public static bool isadmob = false;
-    string applovinads = "c61ee5308dff72ed";
+    string applovinads = "8c98e016870e5a7a";
     string fbnetwordinter = "549505783488066_549506580154653";
     public static string firebaselink = "https://bely3-796dd-default-rtdb.firebaseio.com";
     public static string Homenamescene = "MainScene";
