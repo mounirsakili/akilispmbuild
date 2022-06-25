@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "919928997630",
-    "project_id": "bely3-796dd",
-    "storage_bucket": "bely3-796dd.appspot.com"
+    "project_number": "234430215901",
+    "project_id": "blippi-7a202",
+    "storage_bucket": "blippi-7a202.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:919928997630:android:c667366cacd014341747af",
+        "mobilesdk_app_id": "1:234430215901:android:432e1ffafcd955a25a4d34",
         "android_client_info": {
-          "package_name": "com.belyybetojogopara.colorearbely"
+          "package_name": "com.blippcoloringppi.blippcoloring"
         }
       },
       "oauth_client": [
         {
-          "client_id": "919928997630-mfurmfihr3alvv8v3aieih5192orbbl5.apps.googleusercontent.com",
+          "client_id": "234430215901-sf79utlvvn9v6n6a9mnlu3j9ldg0ft34.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCgOr_dYSyyA_fLSLEpRzIFnQzWqN3obNw"
+          "current_key": "AIzaSyB6YFo5A0bmAc2i40ZtBJOwqSdzAyqkJ6M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "919928997630-mfurmfihr3alvv8v3aieih5192orbbl5.apps.googleusercontent.com",
+              "client_id": "234430215901-sf79utlvvn9v6n6a9mnlu3j9ldg0ft34.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
