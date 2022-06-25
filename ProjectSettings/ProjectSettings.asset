@@ -244,7 +244,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 2
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: user.keystore'
+  AndroidKeystoreName: C:/Users/medfa/Documents/GitHub/EncantoBruno/useqqqr.keystore
   AndroidKeyaliasName: fsq
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
