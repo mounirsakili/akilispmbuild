@@ -6,36 +6,36 @@ using UnityEngine;
 using UnityEngine.Advertisements;
 using UnityEngine.UI;
 
-public class shannonbrowning : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsLoadListener, IUnityAdsShowListener
+public class carltonramey : MonoBehaviour, IUnityAdsInitializationListener, IUnityAdsLoadListener, IUnityAdsShowListener
 {
 
-    public string lizwiley;
-    public GameObject pearlfinley;
+    public string ashleyjoyner;
+    public GameObject elisabowling;
 
     #region AdMob
     [Header("Admob")]
-    public string karennguyen = "";
-    public string lesamercer = "";
-    public string rachaelcrabtree = "";
+    public string tammiquinones = "";
+    public string raquellay = "";
+    public string angeliqueortega = "";
 
     #endregion
     [Space(15)]
     #region
     [Header("UnityAds")]
-    public string sandygiles;
+    public string esmeraldawest;
     public string unityAdsVideoPlacementId = "rewardedVideo";
     #endregion
 
-    static shannonbrowning instance;
+    static carltonramey instance;
 
     public static int unlockID;
  
-    public static shannonbrowning Instance
+    public static carltonramey Instance
     {
         get
         {
             if (instance == null)
-                instance = GameObject.FindObjectOfType(typeof(shannonbrowning)) as shannonbrowning;
+                instance = GameObject.FindObjectOfType(typeof(carltonramey)) as carltonramey;
 
             return instance;
         }
@@ -46,9 +46,9 @@ public class shannonbrowning : MonoBehaviour, IUnityAdsInitializationListener, I
     public static bool isApplovin = false;
     public static bool isUnityads = false;
     public static bool isadmob = false;
-    string applovinads = "2cbdb532cd5bacd2";
+    string applovinads = "607d637ff664bc05";
     string fbnetwordinter = "549505783488066_549506580154653";
-    public static string firebaselink = "https://invictorr-4ec51-default-rtdb.firebaseio.com";
+    public static string firebaselink = "https://mypjmasks-89eb5-default-rtdb.firebaseio.com/";
     public static string Homenamescene = "MainScene";
     string gameId = "4810149";
 

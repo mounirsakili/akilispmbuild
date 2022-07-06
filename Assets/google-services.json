@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "402719965124",
-    "project_id": "invictorr-4ec51",
-    "storage_bucket": "invictorr-4ec51.appspot.com"
+    "project_number": "870800870473",
+    "project_id": "mypjmasks-89eb5",
+    "storage_bucket": "mypjmasks-89eb5.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:402719965124:android:1d5bf1f620c6ef8ae52e91",
+        "mobilesdk_app_id": "1:870800870473:android:0d010510378639da9a8398",
         "android_client_info": {
-          "package_name": "com.invictorjuegos.InvictorColorear"
+          "package_name": "com.maskssuperpj.coloringpj"
         }
       },
       "oauth_client": [
         {
-          "client_id": "402719965124-ci4hji8teu2hje5m2b37pdu2oo2ghbij.apps.googleusercontent.com",
+          "client_id": "870800870473-a888ulv353o2oosku5lq5uvl9i3p10kp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCJYD_WvhhRh-e5w6VVwA3lylrlVNrJww4"
+          "current_key": "AIzaSyCUMPwNMHDkk5f_IK79o5zj85YAQt1H4uU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "402719965124-ci4hji8teu2hje5m2b37pdu2oo2ghbij.apps.googleusercontent.com",
+              "client_id": "870800870473-a888ulv353o2oosku5lq5uvl9i3p10kp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

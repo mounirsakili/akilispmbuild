@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
-  <string name="gcm_defaultSenderId" translatable="false">402719965124</string>
-  <string name="google_storage_bucket" translatable="false">invictorr-4ec51.appspot.com</string>
-  <string name="project_id" translatable="false">invictorr-4ec51</string>
-  <string name="google_api_key" translatable="false">AIzaSyCJYD_WvhhRh-e5w6VVwA3lylrlVNrJww4</string>
-  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCJYD_WvhhRh-e5w6VVwA3lylrlVNrJww4</string>
-  <string name="google_app_id" translatable="false">1:402719965124:android:1d5bf1f620c6ef8ae52e91</string>
-  <string name="default_web_client_id" translatable="false">402719965124-ci4hji8teu2hje5m2b37pdu2oo2ghbij.apps.googleusercontent.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">870800870473</string>
+  <string name="google_storage_bucket" translatable="false">mypjmasks-89eb5.appspot.com</string>
+  <string name="project_id" translatable="false">mypjmasks-89eb5</string>
+  <string name="google_api_key" translatable="false">AIzaSyCUMPwNMHDkk5f_IK79o5zj85YAQt1H4uU</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCUMPwNMHDkk5f_IK79o5zj85YAQt1H4uU</string>
+  <string name="google_app_id" translatable="false">1:870800870473:android:0d010510378639da9a8398</string>
+  <string name="default_web_client_id" translatable="false">870800870473-a888ulv353o2oosku5lq5uvl9i3p10kp.apps.googleusercontent.com</string>
 </resources>

@@ -1,19 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class rodgalvan : MonoBehaviour
+public class bobbielucero : MonoBehaviour
 {
     public Camera cameraObj;
-    public erwinbermudez coloringMenu, paintingMenu;
+    public mauriceferris coloringMenu, paintingMenu;
 
     [System.Serializable]
-    public class erwinbermudez
+    public class mauriceferris
     {
-        public GameObject suzettedenton;
+        public GameObject pearliewilhelm;
         public Color color;
         public Image image;
-        public Sprite brendashirley;
-        public Sprite jasminehorton;
+        public Sprite andreagregory;
+        public Sprite belindavarner;
     }
 
     void Awake()
@@ -31,15 +31,15 @@ public class rodgalvan : MonoBehaviour
         PlayerPrefs.SetInt("isPainting", isPainting ? 1 : 0);
         PlayerPrefs.Save();
 
-        paintingMenu.suzettedenton.SetActive(isPainting);
-        coloringMenu.suzettedenton.SetActive(!isPainting);
+        paintingMenu.pearliewilhelm.SetActive(isPainting);
+        coloringMenu.pearliewilhelm.SetActive(!isPainting);
 
         cameraObj.backgroundColor = isPainting ? paintingMenu.color : coloringMenu.color;
-        paintingMenu.image.sprite = isPainting ? paintingMenu.brendashirley : paintingMenu.jasminehorton;
-        coloringMenu.image.sprite = !isPainting ? coloringMenu.brendashirley : coloringMenu.jasminehorton;
+        paintingMenu.image.sprite = isPainting ? paintingMenu.andreagregory : paintingMenu.belindavarner;
+        coloringMenu.image.sprite = !isPainting ? coloringMenu.andreagregory : coloringMenu.belindavarner;
     }
 
-    public void madgekirk()
+    public void tommieburnett()
     {
        
     }

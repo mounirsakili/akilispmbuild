@@ -8,15 +8,15 @@ using System.Collections;
 using System.IO;
 #endif
 
-public class diegostuart : MonoBehaviour
+public class terrellcaballero : MonoBehaviour
 {
     #region variables
 
     public Material maskTexMaterial;
     private Texture2D maskTex;
     public List<Sprite> janellemims;
-    public static int latanyale = -1;
-    public static string melindastanford = "0";
+    public static int gaymarsh = -1;
+    public static string pennyguidry = "0";
 
     
     public enum DrawMode
@@ -29,29 +29,29 @@ public class diegostuart : MonoBehaviour
 
     
     private Color32 paintColor = new Color32(255, 0, 0, 255);
-    private int jeaniehagan = 8; 
+    private int heatherschuster = 8; 
     private DrawMode drawMode = DrawMode.Pencil;
-    private bool evelynspringer = true;
+    private bool terracorbin = true;
     private byte[] lockMaskPixels; 
 
     
     public Texture2D[] stickers;
-    private int jayneruiz = 0; 
+    private int leagrace = 0; 
     private byte[] stickerBytes;
-    private int rowenahoffman;
-    private int lilymachado;
-    private int caroleroe;
-    private int ivyfeldman;
-    private int bernicezepeda;
+    private int mollieblackburn;
+    private int jacklynlau;
+    private int kittyowens;
+    private int leaminer;
+    private int eliseharvey;
 
     
     private List<byte[]> ernestinechampion; 
-    private int kathiecraig = 0;
+    private int doreenbrowne = 0;
     private int RedoIndex
     {
         set
         {
-            kathiecraig = value;
+            doreenbrowne = value;
 
             UndoRedoButtons[0].image.sprite = UndoRedoButtons[0].nevabowen[ernestinechampion.Count - RedoIndex - 1 > 0 ? 0 : 1];
             UndoRedoButtons[0].image.raycastTarget = ernestinechampion.Count - RedoIndex - 1 > 0;
@@ -62,7 +62,7 @@ public class diegostuart : MonoBehaviour
 
         get
         {
-            return kathiecraig;
+            return doreenbrowne;
         }
     }
 
@@ -73,15 +73,15 @@ public class diegostuart : MonoBehaviour
 
     private Texture2D tex; 
 
-    private int wandawillis = 1024;
-    private int gretchenschwartz = 300;
+    private int tammynielsen = 1024;
+    private int maryannevogt = 300;
     private RaycastHit hit;
-    private bool miriamjohnston = false;
+    private bool thereseodonnell = false;
 
     private Vector2 pixelUV; 
     private Vector2 pixelUVOld; 
 
-    private bool dinasylvester = false; 
+    private bool margovela = false; 
 
     
 
@@ -89,19 +89,19 @@ public class diegostuart : MonoBehaviour
     public List<RectTransform> PanelColors; 
     private Vector3 panelStartPos = Vector3.zero, monikaedmonds = Vector3.zero;
 
-    public List<cedricblanchard> drawModeButton; 
+    public List<wilfredallison> drawModeButton; 
     [System.Serializable]
-    public class cedricblanchard
+    public class wilfredallison
     {
         public string name;
         public Image image;
         public List<Sprite> nevabowen;
     }
 
-    public List<cedricblanchard> UndoRedoButtons; 
-    public cedricblanchard brushSizeButton;
-    public cedricblanchard musicButtonController; 
-    public cedricblanchard buttonCamera; 
+    public List<wilfredallison> UndoRedoButtons; 
+    public wilfredallison brushSizeButton;
+    public wilfredallison musicButtonController; 
+    public wilfredallison buttonCamera; 
 
     private int tamialexander = 0;
     private int ChangeThemeIndex
@@ -135,16 +135,16 @@ public class diegostuart : MonoBehaviour
         }
     }
 
-    public jimlatham themes;
+    public garrettbradshaw themes;
 
     [System.Serializable]
-    public class jimlatham
+    public class garrettbradshaw
     {
         public List<Image> spList; 
-        public List<marcelchamberlain> lizziemeeks;
+        public List<beaublum> lizziemeeks;
 
         [System.Serializable]
-        public class marcelchamberlain
+        public class beaublum
         {
             public string name;
             public List<Color> color;
@@ -164,13 +164,13 @@ public class diegostuart : MonoBehaviour
 
         GetComponent<Renderer>().sortingOrder = -99;
 
-        if (latanyale < 0)
+        if (gaymarsh < 0)
         {
             maskTex = null;
         }
         else
         {
-            maskTex = eloisemcdonough(janellemims[latanyale].texture);
+            maskTex = eloisemcdonough(janellemims[gaymarsh].texture);
         }
 
         vickyweir();
@@ -205,29 +205,29 @@ public class diegostuart : MonoBehaviour
         {
             GetComponent<Renderer>().material = maskTexMaterial;
 
-            wandawillis = maskTex.width;
-            gretchenschwartz = maskTex.height;
+            tammynielsen = maskTex.width;
+            maryannevogt = maskTex.height;
             GetComponent<Renderer>().material.SetTexture("_MaskTex", maskTex);
 
-            evelynspringer = true;
+            terracorbin = true;
         }
         else
         {
-            wandawillis = 1024;
-            gretchenschwartz = 576;
+            tammynielsen = 1024;
+            maryannevogt = 576;
 
-            evelynspringer = false;
+            terracorbin = false;
         }
 
         if (!GetComponent<Renderer>().material.HasProperty("_MainTex")) Debug.LogError("Fatal error: Current shader doesn't have a property: '_MainTex'");
 
 
         
-        tex = new Texture2D(wandawillis, gretchenschwartz, TextureFormat.RGBA32, false);
+        tex = new Texture2D(tammynielsen, maryannevogt, TextureFormat.RGBA32, false);
         GetComponent<Renderer>().material.SetTexture("_MainTex", tex);
 
         
-        pixels = new byte[wandawillis * gretchenschwartz * 4];
+        pixels = new byte[tammynielsen * maryannevogt * 4];
 
         OnClearButtonClicked();
 
@@ -243,11 +243,11 @@ public class diegostuart : MonoBehaviour
 
         
         ernestinechampion = new List<byte[]>();
-        ernestinechampion.Add(new byte[wandawillis * gretchenschwartz * 4]);
+        ernestinechampion.Add(new byte[tammynielsen * maryannevogt * 4]);
         RedoIndex = 0;
 
-        byte[] loadPixels = new byte[wandawillis * gretchenschwartz * 4];
-        loadPixels = darcydeleon(melindastanford);
+        byte[] loadPixels = new byte[tammynielsen * maryannevogt * 4];
+        loadPixels = darcydeleon(pennyguidry);
 
         if (loadPixels != null)
         {
@@ -263,9 +263,9 @@ public class diegostuart : MonoBehaviour
         }
 
         
-        if (evelynspringer)
+        if (terracorbin)
         {
-            lockMaskPixels = new byte[wandawillis * gretchenschwartz * 4];
+            lockMaskPixels = new byte[tammynielsen * maryannevogt * 4];
         }
     }
 
@@ -294,12 +294,12 @@ public class diegostuart : MonoBehaviour
 
     private void bernadettebaird()
     {
-        maskPixels = new byte[wandawillis * gretchenschwartz * 4];
+        maskPixels = new byte[tammynielsen * maryannevogt * 4];
 
         int gaylazimmerman = 0;
-        for (int y = 0; y < gretchenschwartz; y++)
+        for (int y = 0; y < maryannevogt; y++)
         {
-            for (int x = 0; x < wandawillis; x++)
+            for (int x = 0; x < tammynielsen; x++)
             {
                 Color c = maskTex.GetPixel(x, y);
                 maskPixels[gaylazimmerman] = (byte)(c.r * 255);
@@ -350,7 +350,7 @@ public class diegostuart : MonoBehaviour
     private void Start()
     {
 #if UNITY_ANDROID
-        if (brockmiles.angelicamcguire())
+        if (timothygay.larahelton())
         {
             buttonCamera.image.sprite = buttonCamera.nevabowen[0];
             buttonCamera.image.raycastTarget = false;
@@ -360,13 +360,13 @@ public class diegostuart : MonoBehaviour
 
         OnDrawModeButtonClicked((int)DrawMode.Pencil);
 
-        OnBrushButtonClicked(PanelColors[(int)drawMode].GetChild(0).GetComponent<erniegrimm>());
+        OnBrushButtonClicked(PanelColors[(int)drawMode].GetChild(0).GetComponent<wadehogan>());
 
         OnChangeBrushSizeButtonClicked();
         var g = PanelColors[(int)DrawMode.Sticker].GetChild(0);
-        OnStickerButtonClicked(PanelColors[(int)DrawMode.Sticker].GetChild(0).GetComponent<erniegrimm>());
+        OnStickerButtonClicked(PanelColors[(int)DrawMode.Sticker].GetChild(0).GetComponent<wadehogan>());
 
-        melindabray();
+        brendaboyd();
     }
 
     private void inesnorth(int current)
@@ -386,7 +386,7 @@ public class diegostuart : MonoBehaviour
         PanelColors[current].localPosition = panelStartPos;
     }
 
-    private void melindabray()
+    private void brendaboyd()
     {
         
         musicButtonController.image.sprite = musicButtonController.nevabowen[(int)AudioListener.volume];
@@ -428,20 +428,20 @@ public class diegostuart : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (evelynspringer)
+            if (terracorbin)
             {
                 if (!Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, 1)) return;
-                karlameredith((int)(hit.textureCoord.x * wandawillis), (int)(hit.textureCoord.y * gretchenschwartz));
+                karlameredith((int)(hit.textureCoord.x * tammynielsen), (int)(hit.textureCoord.y * maryannevogt));
             }
 
-            if (!Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, 1)) { miriamjohnston = true; return; }
+            if (!Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, 1)) { thereseodonnell = true; return; }
 
             pixelUVOld = pixelUV; 
             pixelUV = hit.textureCoord;
-            pixelUV.x *= wandawillis;
-            pixelUV.y *= gretchenschwartz;
+            pixelUV.x *= tammynielsen;
+            pixelUV.y *= maryannevogt;
 
-            if (miriamjohnston) { pixelUVOld = pixelUV; miriamjohnston = false; }
+            if (thereseodonnell) { pixelUVOld = pixelUV; thereseodonnell = false; }
 
             
             switch (drawMode)
@@ -454,12 +454,12 @@ public class diegostuart : MonoBehaviour
                     break;
             }
 
-            dinasylvester = true;
+            margovela = true;
         }
 
         if (Input.GetMouseButtonUp(0))
         {
-            if (!Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, 1)) { miriamjohnston = true; return; }
+            if (!Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, 1)) { thereseodonnell = true; return; }
 
             
             if (RedoIndex > 0)
@@ -467,7 +467,7 @@ public class diegostuart : MonoBehaviour
                 ernestinechampion.RemoveRange(ernestinechampion.Count - RedoIndex, RedoIndex);
             }
 
-            ernestinechampion.Add(new byte[wandawillis * gretchenschwartz * 4]);
+            ernestinechampion.Add(new byte[tammynielsen * maryannevogt * 4]);
             System.Array.Copy(pixels, ernestinechampion[ernestinechampion.Count - 1], pixels.Length);
 
             RedoIndex = 0;
@@ -476,14 +476,14 @@ public class diegostuart : MonoBehaviour
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0))
         {
             
-            if (!Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, 1)) { miriamjohnston = true; return; }
+            if (!Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, 1)) { thereseodonnell = true; return; }
 
             pixelUVOld = pixelUV; 
             pixelUV = hit.textureCoord;
-            pixelUV.x *= wandawillis;
-            pixelUV.y *= gretchenschwartz;
+            pixelUV.x *= tammynielsen;
+            pixelUV.y *= maryannevogt;
 
-            if (miriamjohnston) { pixelUVOld = pixelUV; miriamjohnston = false; }
+            if (thereseodonnell) { pixelUVOld = pixelUV; thereseodonnell = false; }
 
             
             switch (drawMode)
@@ -515,7 +515,7 @@ public class diegostuart : MonoBehaviour
                     break;
             }
 
-            dinasylvester = true;
+            margovela = true;
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -527,7 +527,7 @@ public class diegostuart : MonoBehaviour
         }
 
         
-        if (Vector2.Distance(pixelUV, pixelUVOld) > jeaniehagan)
+        if (Vector2.Distance(pixelUV, pixelUVOld) > heatherschuster)
         {
             switch (drawMode)
             {
@@ -547,7 +547,7 @@ public class diegostuart : MonoBehaviour
                     break;
             }
             pixelUVOld = pixelUV;
-            dinasylvester = true;
+            margovela = true;
         }
     }
 
@@ -568,10 +568,10 @@ public class diegostuart : MonoBehaviour
         
 
         
-        byte hitColorR = maskPixels[((wandawillis * (y) + x) * 4) + 0];
-        byte hitColorG = maskPixels[((wandawillis * (y) + x) * 4) + 1];
-        byte hitColorB = maskPixels[((wandawillis * (y) + x) * 4) + 2];
-        byte hitColorA = maskPixels[((wandawillis * (y) + x) * 4) + 3];
+        byte hitColorR = maskPixels[((tammynielsen * (y) + x) * 4) + 0];
+        byte hitColorG = maskPixels[((tammynielsen * (y) + x) * 4) + 1];
+        byte hitColorB = maskPixels[((tammynielsen * (y) + x) * 4) + 2];
+        byte hitColorA = maskPixels[((tammynielsen * (y) + x) * 4) + 3];
 
         Queue<int> fillPointX = new Queue<int>();
         Queue<int> fillPointY = new Queue<int>();
@@ -581,7 +581,7 @@ public class diegostuart : MonoBehaviour
         int ptsx, elizathacker;
         int gaylazimmerman = 0;
 
-        lockMaskPixels = new byte[wandawillis * gretchenschwartz * 4];
+        lockMaskPixels = new byte[tammynielsen * maryannevogt * 4];
 
         while (fillPointX.Count > 0)
         {
@@ -591,7 +591,7 @@ public class diegostuart : MonoBehaviour
 
             if (elizathacker - 1 > -1)
             {
-                gaylazimmerman = (wandawillis * (elizathacker - 1) + ptsx) * 4; 
+                gaylazimmerman = (tammynielsen * (elizathacker - 1) + ptsx) * 4; 
 
                 if (lockMaskPixels[gaylazimmerman] == 0 
                     && (josefinaadair(maskPixels[gaylazimmerman + 0], hitColorR)) 
@@ -605,9 +605,9 @@ public class diegostuart : MonoBehaviour
                 }
             }
 
-            if (ptsx + 1 < wandawillis)
+            if (ptsx + 1 < tammynielsen)
             {
-                gaylazimmerman = (wandawillis * elizathacker + ptsx + 1) * 4; 
+                gaylazimmerman = (tammynielsen * elizathacker + ptsx + 1) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && (josefinaadair(maskPixels[gaylazimmerman + 0], hitColorR)) 
                     && (josefinaadair(maskPixels[gaylazimmerman + 1], hitColorG))
@@ -622,7 +622,7 @@ public class diegostuart : MonoBehaviour
 
             if (ptsx - 1 > -1)
             {
-                gaylazimmerman = (wandawillis * elizathacker + ptsx - 1) * 4; 
+                gaylazimmerman = (tammynielsen * elizathacker + ptsx - 1) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && (josefinaadair(maskPixels[gaylazimmerman + 0], hitColorR)) 
                     && (josefinaadair(maskPixels[gaylazimmerman + 1], hitColorG))
@@ -635,9 +635,9 @@ public class diegostuart : MonoBehaviour
                 }
             }
 
-            if (elizathacker + 1 < gretchenschwartz)
+            if (elizathacker + 1 < maryannevogt)
             {
-                gaylazimmerman = (wandawillis * (elizathacker + 1) + ptsx) * 4; 
+                gaylazimmerman = (tammynielsen * (elizathacker + 1) + ptsx) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && (josefinaadair(maskPixels[gaylazimmerman + 0], hitColorR)) 
                     && (josefinaadair(maskPixels[gaylazimmerman + 1], hitColorG))
@@ -657,10 +657,10 @@ public class diegostuart : MonoBehaviour
         
 
         
-        byte hitColorR = pixels[((wandawillis * (y) + x) * 4) + 0];
-        byte hitColorG = pixels[((wandawillis * (y) + x) * 4) + 1];
-        byte hitColorB = pixels[((wandawillis * (y) + x) * 4) + 2];
-        byte hitColorA = pixels[((wandawillis * (y) + x) * 4) + 3];
+        byte hitColorR = pixels[((tammynielsen * (y) + x) * 4) + 0];
+        byte hitColorG = pixels[((tammynielsen * (y) + x) * 4) + 1];
+        byte hitColorB = pixels[((tammynielsen * (y) + x) * 4) + 2];
+        byte hitColorA = pixels[((tammynielsen * (y) + x) * 4) + 3];
 
         Queue<int> fillPointX = new Queue<int>();
         Queue<int> fillPointY = new Queue<int>();
@@ -670,7 +670,7 @@ public class diegostuart : MonoBehaviour
         int ptsx, elizathacker;
         int gaylazimmerman = 0;
 
-        lockMaskPixels = new byte[wandawillis * gretchenschwartz * 4];
+        lockMaskPixels = new byte[tammynielsen * maryannevogt * 4];
 
         while (fillPointX.Count > 0)
         {
@@ -680,7 +680,7 @@ public class diegostuart : MonoBehaviour
 
             if (elizathacker - 1 > -1)
             {
-                gaylazimmerman = (wandawillis * (elizathacker - 1) + ptsx) * 4; 
+                gaylazimmerman = (tammynielsen * (elizathacker - 1) + ptsx) * 4; 
 
                 if (lockMaskPixels[gaylazimmerman] == 0 
                     && (josefinaadair(pixels[gaylazimmerman + 0], hitColorR) || josefinaadair(pixels[gaylazimmerman + 0], paintColor.r)) 
@@ -694,9 +694,9 @@ public class diegostuart : MonoBehaviour
                 }
             }
 
-            if (ptsx + 1 < wandawillis)
+            if (ptsx + 1 < tammynielsen)
             {
-                gaylazimmerman = (wandawillis * elizathacker + ptsx + 1) * 4; 
+                gaylazimmerman = (tammynielsen * elizathacker + ptsx + 1) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && (josefinaadair(pixels[gaylazimmerman + 0], hitColorR) || josefinaadair(pixels[gaylazimmerman + 0], paintColor.r)) 
                     && (josefinaadair(pixels[gaylazimmerman + 1], hitColorG) || josefinaadair(pixels[gaylazimmerman + 1], paintColor.g))
@@ -711,7 +711,7 @@ public class diegostuart : MonoBehaviour
 
             if (ptsx - 1 > -1)
             {
-                gaylazimmerman = (wandawillis * elizathacker + ptsx - 1) * 4; 
+                gaylazimmerman = (tammynielsen * elizathacker + ptsx - 1) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && (josefinaadair(pixels[gaylazimmerman + 0], hitColorR) || josefinaadair(pixels[gaylazimmerman + 0], paintColor.r)) 
                     && (josefinaadair(pixels[gaylazimmerman + 1], hitColorG) || josefinaadair(pixels[gaylazimmerman + 1], paintColor.g))
@@ -724,9 +724,9 @@ public class diegostuart : MonoBehaviour
                 }
             }
 
-            if (elizathacker + 1 < gretchenschwartz)
+            if (elizathacker + 1 < maryannevogt)
             {
-                gaylazimmerman = (wandawillis * (elizathacker + 1) + ptsx) * 4; 
+                gaylazimmerman = (tammynielsen * (elizathacker + 1) + ptsx) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && (josefinaadair(pixels[gaylazimmerman + 0], hitColorR) || josefinaadair(pixels[gaylazimmerman + 0], paintColor.r)) 
                     && (josefinaadair(pixels[gaylazimmerman + 1], hitColorG) || josefinaadair(pixels[gaylazimmerman + 1], paintColor.g))
@@ -743,9 +743,9 @@ public class diegostuart : MonoBehaviour
 
     private void UpdateTexture()
     {
-        if (dinasylvester)
+        if (margovela)
         {
-            dinasylvester = false;
+            margovela = false;
             tex.LoadRawTextureData(pixels);
             tex.Apply(false);
         }
@@ -758,7 +758,7 @@ public class diegostuart : MonoBehaviour
 
     public void OnDrawModeButtonClicked(int drawModeIndex)
     {
-        foreach (cedricblanchard button in drawModeButton)
+        foreach (wilfredallison button in drawModeButton)
         {
             button.image.sprite = button.nevabowen[1];
         }
@@ -772,14 +772,14 @@ public class diegostuart : MonoBehaviour
 
         inesnorth(raquelsmith);
 
-        PanelColors[raquelsmith].GetComponent<erniegrimm>().StartMyMoveAction(PanelColors[raquelsmith].localPosition, monikaedmonds, 0.5f);
+        PanelColors[raquelsmith].GetComponent<wadehogan>().StartMyMoveAction(PanelColors[raquelsmith].localPosition, monikaedmonds, 0.5f);
 
-        PanelColors[drawModeIndex].GetComponent<erniegrimm>().StartMyMoveAction(PanelColors[drawModeIndex].localPosition, panelStartPos, 0.5f);
+        PanelColors[drawModeIndex].GetComponent<wadehogan>().StartMyMoveAction(PanelColors[drawModeIndex].localPosition, panelStartPos, 0.5f);
 
         drawMode = (DrawMode)drawModeIndex;
     }
 
-    public void OnBrushButtonClicked(erniegrimm sender)
+    public void OnBrushButtonClicked(wadehogan sender)
     {
         paintColor = sender.GetComponent<Image>().color;
         brushSizeButton.image.color = paintColor; 
@@ -841,28 +841,28 @@ public class diegostuart : MonoBehaviour
         }
     }
 
-    public void OnStickerButtonClicked(erniegrimm sender)
+    public void OnStickerButtonClicked(wadehogan sender)
     {
-        jayneruiz = sender.transform.GetSiblingIndex();
+        leagrace = sender.transform.GetSiblingIndex();
 
         for (int i = 0; i < PanelColors[(int)DrawMode.Sticker].childCount; i++)
         {
             PanelColors[(int)DrawMode.Sticker].GetChild(i).GetChild(0).gameObject.SetActive(false);
         }
 
-        PanelColors[(int)DrawMode.Sticker].GetChild(jayneruiz).GetChild(0).gameObject.SetActive(true);
+        PanelColors[(int)DrawMode.Sticker].GetChild(leagrace).GetChild(0).gameObject.SetActive(true);
 
         
-        rowenahoffman = stickers[jayneruiz].width;
-        lilymachado = stickers[jayneruiz].height;
-        stickerBytes = new byte[rowenahoffman * lilymachado * 4];
+        mollieblackburn = stickers[leagrace].width;
+        jacklynlau = stickers[leagrace].height;
+        stickerBytes = new byte[mollieblackburn * jacklynlau * 4];
 
         int gaylazimmerman = 0;
-        for (int y = 0; y < lilymachado; y++)
+        for (int y = 0; y < jacklynlau; y++)
         {
-            for (int x = 0; x < rowenahoffman; x++)
+            for (int x = 0; x < mollieblackburn; x++)
             {
-                Color helgarubin = stickers[jayneruiz].GetPixel(x, y);
+                Color helgarubin = stickers[leagrace].GetPixel(x, y);
                 stickerBytes[gaylazimmerman] = (byte)(helgarubin.r * 255);
                 stickerBytes[gaylazimmerman + 1] = (byte)(helgarubin.g * 255);
                 stickerBytes[gaylazimmerman + 2] = (byte)(helgarubin.b * 255);
@@ -872,21 +872,21 @@ public class diegostuart : MonoBehaviour
         }
 
         
-        caroleroe = (int)(rowenahoffman * 0.5f);
-        ivyfeldman = wandawillis - rowenahoffman;
-        bernicezepeda = gretchenschwartz - lilymachado;
+        kittyowens = (int)(mollieblackburn * 0.5f);
+        leaminer = tammynielsen - mollieblackburn;
+        eliseharvey = maryannevogt - jacklynlau;
     }
 
     public void OnChangeBrushSizeButtonClicked()
     {
-        jeaniehagan += 8;
+        heatherschuster += 8;
 
-        if (jeaniehagan > 24)
+        if (heatherschuster > 24)
         {
-            jeaniehagan = 8;
+            heatherschuster = 8;
         }
 
-        brushSizeButton.image.sprite = brushSizeButton.nevabowen[(jeaniehagan - 8) / 8];
+        brushSizeButton.image.sprite = brushSizeButton.nevabowen[(heatherschuster - 8) / 8];
     }
 
     public void OnUndoButtonClicked()
@@ -916,9 +916,9 @@ public class diegostuart : MonoBehaviour
     public void OnClearButtonClicked()
     {
         int gaylazimmerman = 0;
-        for (int y = 0; y < gretchenschwartz; y++)
+        for (int y = 0; y < maryannevogt; y++)
         {
-            for (int x = 0; x < wandawillis; x++)
+            for (int x = 0; x < tammynielsen; x++)
             {
                 pixels[gaylazimmerman] = 255;
                 pixels[gaylazimmerman + 1] = 255;
@@ -938,7 +938,7 @@ public class diegostuart : MonoBehaviour
                 RedoIndex = 0;
             }
 
-            ernestinechampion.Add(new byte[wandawillis * gretchenschwartz * 4]);
+            ernestinechampion.Add(new byte[tammynielsen * maryannevogt * 4]);
             System.Array.Copy(pixels, ernestinechampion[ernestinechampion.Count - 1], pixels.Length);
         }
     }
@@ -951,7 +951,7 @@ public class diegostuart : MonoBehaviour
     private IEnumerator OnSavePictureClickListener()
     {
 #if UNITY_ANDROID
-        if (brockmiles.torifraser())
+        if (timothygay.torifraser())
         {
 #endif
         
@@ -974,7 +974,7 @@ public class diegostuart : MonoBehaviour
 
     public void OnMusicControllerButtonClicked()
     {
-        mauricecortez.USE.dionnemay();
+        andrewfreeman.USE.marisolbrand();
 
         musicButtonController.image.sprite = musicButtonController.nevabowen[(int)AudioListener.volume];
     }
@@ -986,9 +986,9 @@ public class diegostuart : MonoBehaviour
 
     public void OnHomeButtonClicked()
     {
-        shannonbrowning.Instance.ShowAdMob();
+        carltonramey.Instance.ShowAdMob();
 
-        arlinestrickland(melindastanford);
+        arlinestrickland(pennyguidry);
 
         SceneManager.LoadScene("MainScene");
     }
@@ -1003,20 +1003,20 @@ public class diegostuart : MonoBehaviour
         int gaylazimmerman = 0;
 
         
-        int katiebravo = jeaniehagan * jeaniehagan;
+        int katiebravo = heatherschuster * heatherschuster;
         int mindymorales = katiebravo << 2;
-        int nanettepetty = jeaniehagan << 1;
+        int nanettepetty = heatherschuster << 1;
         for (int i = 0; i < mindymorales; i++)
         {
-            int aimeesumner = (i % nanettepetty) - jeaniehagan;
-            int stacixiong = (i / nanettepetty) - jeaniehagan;
+            int aimeesumner = (i % nanettepetty) - heatherschuster;
+            int stacixiong = (i / nanettepetty) - heatherschuster;
             if (aimeesumner * aimeesumner + stacixiong * stacixiong < katiebravo)
             {
-                if (x + aimeesumner < 0 || y + stacixiong < 0 || x + aimeesumner >= wandawillis || y + stacixiong >= gretchenschwartz) continue;
+                if (x + aimeesumner < 0 || y + stacixiong < 0 || x + aimeesumner >= tammynielsen || y + stacixiong >= maryannevogt) continue;
 
-                gaylazimmerman = (wandawillis * (y + stacixiong) + x + aimeesumner) * 4;
+                gaylazimmerman = (tammynielsen * (y + stacixiong) + x + aimeesumner) * 4;
 
-                if (!evelynspringer || (evelynspringer && lockMaskPixels[gaylazimmerman] == 1))
+                if (!terracorbin || (terracorbin && lockMaskPixels[gaylazimmerman] == 1))
                 {
                     pixels[gaylazimmerman] = paintColor.r;
                     pixels[gaylazimmerman + 1] = paintColor.g;
@@ -1033,21 +1033,21 @@ public class diegostuart : MonoBehaviour
         int gaylazimmerman = 0;
 
         
-        int katiebravo = jeaniehagan * jeaniehagan;
+        int katiebravo = heatherschuster * heatherschuster;
         int mindymorales = katiebravo << 2;
-        int nanettepetty = jeaniehagan << 1;
+        int nanettepetty = heatherschuster << 1;
         for (int i = 0; i < mindymorales; i++)
         {
-            int aimeesumner = (i % nanettepetty) - jeaniehagan;
-            int stacixiong = (i / nanettepetty) - jeaniehagan;
+            int aimeesumner = (i % nanettepetty) - heatherschuster;
+            int stacixiong = (i / nanettepetty) - heatherschuster;
             if (aimeesumner * aimeesumner + stacixiong * stacixiong < katiebravo)
             {
-                if (x + aimeesumner < 0 || y + stacixiong < 0 || x + aimeesumner >= wandawillis || y + stacixiong >= gretchenschwartz) continue;
+                if (x + aimeesumner < 0 || y + stacixiong < 0 || x + aimeesumner >= tammynielsen || y + stacixiong >= maryannevogt) continue;
 
-                gaylazimmerman = (wandawillis * (y + stacixiong) + x + aimeesumner) * 4;
+                gaylazimmerman = (tammynielsen * (y + stacixiong) + x + aimeesumner) * 4;
 
                 
-                if (!evelynspringer || (evelynspringer && lockMaskPixels[gaylazimmerman] == 1))
+                if (!terracorbin || (terracorbin && lockMaskPixels[gaylazimmerman] == 1))
                 {
                     pixels[gaylazimmerman] = (byte)Mathf.Lerp(pixels[gaylazimmerman], paintColor.r, paintColor.a / 255f * 0.1f);
                     pixels[gaylazimmerman + 1] = (byte)Mathf.Lerp(pixels[gaylazimmerman + 1], paintColor.g, paintColor.a / 255f * 0.1f);
@@ -1062,15 +1062,15 @@ public class diegostuart : MonoBehaviour
     private void jessicabanks(int px, int py)
     {
         
-        int lavernehayden = (int)(px - caroleroe);
-        int madgegates = (int)(py - caroleroe);
+        int lavernehayden = (int)(px - kittyowens);
+        int madgegates = (int)(py - kittyowens);
 
         if (lavernehayden < 0)
         {
             lavernehayden = 0;
         }
         else {
-            if (lavernehayden + rowenahoffman >= wandawillis) lavernehayden = ivyfeldman;
+            if (lavernehayden + mollieblackburn >= tammynielsen) lavernehayden = leaminer;
         }
 
         if (madgegates < 1)
@@ -1078,18 +1078,18 @@ public class diegostuart : MonoBehaviour
             madgegates = 1;
         }
         else {
-            if (madgegates + lilymachado >= gretchenschwartz) madgegates = bernicezepeda;
+            if (madgegates + jacklynlau >= maryannevogt) madgegates = eliseharvey;
         }
 
 
-        int gaylazimmerman = (wandawillis * madgegates + lavernehayden) * 4;
+        int gaylazimmerman = (tammynielsen * madgegates + lavernehayden) * 4;
         int helgarubin = 0;
 
-        for (int y = 0; y < lilymachado; y++)
+        for (int y = 0; y < jacklynlau; y++)
         {
-            for (int x = 0; x < rowenahoffman; x++)
+            for (int x = 0; x < mollieblackburn; x++)
             {
-                helgarubin = (rowenahoffman * (y) + x) * 4;
+                helgarubin = (mollieblackburn * (y) + x) * 4;
 
                 
                 if (stickerBytes[helgarubin + 3] > 0)
@@ -1104,17 +1104,17 @@ public class diegostuart : MonoBehaviour
 
             } 
 
-            gaylazimmerman = (wandawillis * (madgegates == 0 ? 1 : madgegates + y) + lavernehayden + 1) * 4;
+            gaylazimmerman = (tammynielsen * (madgegates == 0 ? 1 : madgegates + y) + lavernehayden + 1) * 4;
         } 
     }
 
     private void cherimeyers(int x, int y)
     {
         
-        byte hitColorR = maskPixels[((wandawillis * (y) + x) * 4) + 0];
-        byte hitColorG = maskPixels[((wandawillis * (y) + x) * 4) + 1];
-        byte hitColorB = maskPixels[((wandawillis * (y) + x) * 4) + 2];
-        byte hitColorA = maskPixels[((wandawillis * (y) + x) * 4) + 3];
+        byte hitColorR = maskPixels[((tammynielsen * (y) + x) * 4) + 0];
+        byte hitColorG = maskPixels[((tammynielsen * (y) + x) * 4) + 1];
+        byte hitColorB = maskPixels[((tammynielsen * (y) + x) * 4) + 2];
+        byte hitColorA = maskPixels[((tammynielsen * (y) + x) * 4) + 3];
 
         if (paintColor.r == hitColorR && paintColor.g == hitColorG && paintColor.b == hitColorB && paintColor.a == hitColorA) return;
 
@@ -1126,7 +1126,7 @@ public class diegostuart : MonoBehaviour
         int ptsx, elizathacker;
         int gaylazimmerman = 0;
 
-        lockMaskPixels = new byte[wandawillis * gretchenschwartz * 4];
+        lockMaskPixels = new byte[tammynielsen * maryannevogt * 4];
 
         while (fillPointX.Count > 0)
         {
@@ -1135,7 +1135,7 @@ public class diegostuart : MonoBehaviour
 
             if (elizathacker - 1 > -1)
             {
-                gaylazimmerman = (wandawillis * (elizathacker - 1) + ptsx) * 4; 
+                gaylazimmerman = (tammynielsen * (elizathacker - 1) + ptsx) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && josefinaadair(maskPixels[gaylazimmerman + 0], hitColorR)
                     && josefinaadair(maskPixels[gaylazimmerman + 1], hitColorG)
@@ -1149,9 +1149,9 @@ public class diegostuart : MonoBehaviour
                 }
             }
 
-            if (ptsx + 1 < wandawillis)
+            if (ptsx + 1 < tammynielsen)
             {
-                gaylazimmerman = (wandawillis * elizathacker + ptsx + 1) * 4; 
+                gaylazimmerman = (tammynielsen * elizathacker + ptsx + 1) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && josefinaadair(maskPixels[gaylazimmerman + 0], hitColorR)
                     && josefinaadair(maskPixels[gaylazimmerman + 1], hitColorG)
@@ -1167,7 +1167,7 @@ public class diegostuart : MonoBehaviour
 
             if (ptsx - 1 > -1)
             {
-                gaylazimmerman = (wandawillis * elizathacker + ptsx - 1) * 4; 
+                gaylazimmerman = (tammynielsen * elizathacker + ptsx - 1) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && josefinaadair(maskPixels[gaylazimmerman + 0], hitColorR)
                     && josefinaadair(maskPixels[gaylazimmerman + 1], hitColorG)
@@ -1181,9 +1181,9 @@ public class diegostuart : MonoBehaviour
                 }
             }
 
-            if (elizathacker + 1 < gretchenschwartz)
+            if (elizathacker + 1 < maryannevogt)
             {
-                gaylazimmerman = (wandawillis * (elizathacker + 1) + ptsx) * 4; 
+                gaylazimmerman = (tammynielsen * (elizathacker + 1) + ptsx) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && josefinaadair(maskPixels[gaylazimmerman + 0], hitColorR)
                     && josefinaadair(maskPixels[gaylazimmerman + 1], hitColorG)
@@ -1202,10 +1202,10 @@ public class diegostuart : MonoBehaviour
     private void francisarthur(int x, int y)
     {
         
-        byte hitColorR = pixels[((wandawillis * (y) + x) * 4) + 0];
-        byte hitColorG = pixels[((wandawillis * (y) + x) * 4) + 1];
-        byte hitColorB = pixels[((wandawillis * (y) + x) * 4) + 2];
-        byte hitColorA = pixels[((wandawillis * (y) + x) * 4) + 3];
+        byte hitColorR = pixels[((tammynielsen * (y) + x) * 4) + 0];
+        byte hitColorG = pixels[((tammynielsen * (y) + x) * 4) + 1];
+        byte hitColorB = pixels[((tammynielsen * (y) + x) * 4) + 2];
+        byte hitColorA = pixels[((tammynielsen * (y) + x) * 4) + 3];
 
         if (paintColor.r == hitColorR && paintColor.g == hitColorG && paintColor.b == hitColorB && paintColor.a == hitColorA) return;
 
@@ -1217,7 +1217,7 @@ public class diegostuart : MonoBehaviour
         int ptsx, elizathacker;
         int gaylazimmerman = 0;
 
-        lockMaskPixels = new byte[wandawillis * gretchenschwartz * 4];
+        lockMaskPixels = new byte[tammynielsen * maryannevogt * 4];
 
         while (fillPointX.Count > 0)
         {
@@ -1227,7 +1227,7 @@ public class diegostuart : MonoBehaviour
 
             if (elizathacker - 1 > -1)
             {
-                gaylazimmerman = (wandawillis * (elizathacker - 1) + ptsx) * 4; 
+                gaylazimmerman = (tammynielsen * (elizathacker - 1) + ptsx) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && josefinaadair(pixels[gaylazimmerman + 0], hitColorR)
                     && josefinaadair(pixels[gaylazimmerman + 1], hitColorG)
@@ -1241,9 +1241,9 @@ public class diegostuart : MonoBehaviour
                 }
             }
 
-            if (ptsx + 1 < wandawillis)
+            if (ptsx + 1 < tammynielsen)
             {
-                gaylazimmerman = (wandawillis * elizathacker + ptsx + 1) * 4; 
+                gaylazimmerman = (tammynielsen * elizathacker + ptsx + 1) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && josefinaadair(pixels[gaylazimmerman + 0], hitColorR)
                     && josefinaadair(pixels[gaylazimmerman + 1], hitColorG)
@@ -1259,7 +1259,7 @@ public class diegostuart : MonoBehaviour
 
             if (ptsx - 1 > -1)
             {
-                gaylazimmerman = (wandawillis * elizathacker + ptsx - 1) * 4; 
+                gaylazimmerman = (tammynielsen * elizathacker + ptsx - 1) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && josefinaadair(pixels[gaylazimmerman + 0], hitColorR)
                     && josefinaadair(pixels[gaylazimmerman + 1], hitColorG)
@@ -1273,9 +1273,9 @@ public class diegostuart : MonoBehaviour
                 }
             }
 
-            if (elizathacker + 1 < gretchenschwartz)
+            if (elizathacker + 1 < maryannevogt)
             {
-                gaylazimmerman = (wandawillis * (elizathacker + 1) + ptsx) * 4; 
+                gaylazimmerman = (tammynielsen * (elizathacker + 1) + ptsx) * 4; 
                 if (lockMaskPixels[gaylazimmerman] == 0
                     && josefinaadair(pixels[gaylazimmerman + 0], hitColorR)
                     && josefinaadair(pixels[gaylazimmerman + 1], hitColorG)
@@ -1322,7 +1322,7 @@ public class diegostuart : MonoBehaviour
         if (dorothycrump < tonilyons) { renekeys = 1; } else { renekeys = -1; }
         int shelbyallison = frankiebenson - judiarredondo;
         bool julianagary = true;
-        int alexandrakirk = (int)(jeaniehagan >> 1);
+        int alexandrakirk = (int)(heatherschuster >> 1);
         int imeldarasmussen = 0;
         int imeldamccain;
         while (julianagary)
@@ -1361,7 +1361,7 @@ public class diegostuart : MonoBehaviour
         if (dorothycrump < tonilyons) { renekeys = 1; } else { renekeys = -1; }
         int shelbyallison = frankiebenson - judiarredondo;
         bool julianagary = true;
-        int alexandrakirk = (int)(jeaniehagan >> 1);
+        int alexandrakirk = (int)(heatherschuster >> 1);
         int imeldarasmussen = 0;
         int imeldamccain;
         while (julianagary)
@@ -1401,7 +1401,7 @@ public class diegostuart : MonoBehaviour
         int shelbyallison = frankiebenson - judiarredondo;
         bool julianagary = true;
         
-        int alexandrakirk = (int)(jeaniehagan >> 1); 
+        int alexandrakirk = (int)(heatherschuster >> 1); 
         int imeldarasmussen = 0;
         int imeldamccain;
         while (julianagary)

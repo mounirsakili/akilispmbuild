@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class louiefitzpatrick : MonoBehaviour
+public class benitohutchison : MonoBehaviour
 {
     
     void Update()
@@ -16,7 +16,7 @@ public class louiefitzpatrick : MonoBehaviour
         }
     }
 
-    public void lorirandall()
+    public void carolinagranados()
     {
         SceneManager.LoadScene("SettingsScene");
     }
