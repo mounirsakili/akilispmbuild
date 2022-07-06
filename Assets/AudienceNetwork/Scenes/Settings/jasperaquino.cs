@@ -2,39 +2,39 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class dominiqueholman : MonoBehaviour
+public class jasperaquino : MonoBehaviour
 {
-    private static string janarico = "URL_PREFIX";
+    private static string nellboggs = "URL_PREFIX";
 
     public InputField urlPrefixInput;
     public Text sdkVersionText;
 
-    private string hollycuevas;
+    private string jannieshelton;
 
     
-    public static void lucillegrady()
+    public static void charlenefry()
     {
-        string prefix = PlayerPrefs.GetString(janarico, "");
+        string prefix = PlayerPrefs.GetString(nellboggs, "");
         AudienceNetwork.AdSettings.SetUrlPrefix(prefix);
     }
 
     void Start()
     {
-        hollycuevas = PlayerPrefs.GetString(janarico, "");
-        urlPrefixInput.text = hollycuevas;
+        jannieshelton = PlayerPrefs.GetString(nellboggs, "");
+        urlPrefixInput.text = jannieshelton;
         sdkVersionText.text = AudienceNetwork.SdkVersion.Build;
     }
 
     public void OnEditEnd(string prefix)
     {
-        hollycuevas = prefix;
+        jannieshelton = prefix;
         SaveSettings();
     }
 
     public void SaveSettings()
     {
-        PlayerPrefs.SetString(janarico, hollycuevas);
-        AudienceNetwork.AdSettings.SetUrlPrefix(hollycuevas);
+        PlayerPrefs.SetString(nellboggs, jannieshelton);
+        AudienceNetwork.AdSettings.SetUrlPrefix(jannieshelton);
     }
 
     public void AdViewScene()
