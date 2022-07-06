@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
-  <string name="gcm_defaultSenderId" translatable="false">234430215901</string>
-  <string name="google_storage_bucket" translatable="false">blippi-7a202.appspot.com</string>
-  <string name="project_id" translatable="false">blippi-7a202</string>
-  <string name="google_api_key" translatable="false">AIzaSyB6YFo5A0bmAc2i40ZtBJOwqSdzAyqkJ6M</string>
-  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB6YFo5A0bmAc2i40ZtBJOwqSdzAyqkJ6M</string>
-  <string name="google_app_id" translatable="false">1:234430215901:android:432e1ffafcd955a25a4d34</string>
-  <string name="default_web_client_id" translatable="false">234430215901-sf79utlvvn9v6n6a9mnlu3j9ldg0ft34.apps.googleusercontent.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">402719965124</string>
+  <string name="google_storage_bucket" translatable="false">invictorr-4ec51.appspot.com</string>
+  <string name="project_id" translatable="false">invictorr-4ec51</string>
+  <string name="google_api_key" translatable="false">AIzaSyCJYD_WvhhRh-e5w6VVwA3lylrlVNrJww4</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCJYD_WvhhRh-e5w6VVwA3lylrlVNrJww4</string>
+  <string name="google_app_id" translatable="false">1:402719965124:android:1d5bf1f620c6ef8ae52e91</string>
+  <string name="default_web_client_id" translatable="false">402719965124-ci4hji8teu2hje5m2b37pdu2oo2ghbij.apps.googleusercontent.com</string>
 </resources>

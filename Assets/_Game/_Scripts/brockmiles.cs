@@ -1,16 +1,16 @@
 using UnityEngine;
 
-public class randyrobinson : MonoBehaviour
+public class brockmiles : MonoBehaviour
 {
     
 
-    public static bool ashleighmcclellan()
+    public static bool evemoses()
     {
         AndroidRuntimePermissions.Permission[] result = AndroidRuntimePermissions.CheckPermissions("android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.CAMERA");
         return (result[0] == AndroidRuntimePermissions.Permission.Denied || result[1] == AndroidRuntimePermissions.Permission.Denied);
     }
 
-    public static bool irmatrotter()
+    public static bool sandyeaton()
     {
         AndroidRuntimePermissions.Permission[] result = AndroidRuntimePermissions.RequestPermissions("android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.CAMERA");
         return (result[0] == AndroidRuntimePermissions.Permission.Granted && result[1] == AndroidRuntimePermissions.Permission.Granted);
@@ -18,7 +18,7 @@ public class randyrobinson : MonoBehaviour
 
     
 
-    public static bool macahill()
+    public static bool angelicamcguire()
     {
         AndroidRuntimePermissions.Permission[] result = AndroidRuntimePermissions.CheckPermissions("android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE");
         return (result[0] == AndroidRuntimePermissions.Permission.Denied || result[1] == AndroidRuntimePermissions.Permission.Denied);
@@ -32,13 +32,13 @@ public class randyrobinson : MonoBehaviour
 
     
 
-    public static bool kellyvillarreal()
+    public static bool olivepeacock()
     {
         AndroidRuntimePermissions.Permission result = AndroidRuntimePermissions.CheckPermission("android.permission.RECORD_AUDIO");
         return (result == AndroidRuntimePermissions.Permission.Denied);
     }
 
-    public static bool rosemarievalenzuela()
+    public static bool youngcrouch()
     {
         AndroidRuntimePermissions.Permission result = AndroidRuntimePermissions.RequestPermission("android.permission.RECORD_AUDIO");
         return (result == AndroidRuntimePermissions.Permission.Granted);

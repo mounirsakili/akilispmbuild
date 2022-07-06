@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "234430215901",
-    "project_id": "blippi-7a202",
-    "storage_bucket": "blippi-7a202.appspot.com"
+    "project_number": "402719965124",
+    "project_id": "invictorr-4ec51",
+    "storage_bucket": "invictorr-4ec51.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:234430215901:android:432e1ffafcd955a25a4d34",
+        "mobilesdk_app_id": "1:402719965124:android:1d5bf1f620c6ef8ae52e91",
         "android_client_info": {
-          "package_name": "com.blippcoloringppi.blippcoloring"
+          "package_name": "com.invictorjuegos.InvictorColorear"
         }
       },
       "oauth_client": [
         {
-          "client_id": "234430215901-sf79utlvvn9v6n6a9mnlu3j9ldg0ft34.apps.googleusercontent.com",
+          "client_id": "402719965124-ci4hji8teu2hje5m2b37pdu2oo2ghbij.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB6YFo5A0bmAc2i40ZtBJOwqSdzAyqkJ6M"
+          "current_key": "AIzaSyCJYD_WvhhRh-e5w6VVwA3lylrlVNrJww4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "234430215901-sf79utlvvn9v6n6a9mnlu3j9ldg0ft34.apps.googleusercontent.com",
+              "client_id": "402719965124-ci4hji8teu2hje5m2b37pdu2oo2ghbij.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

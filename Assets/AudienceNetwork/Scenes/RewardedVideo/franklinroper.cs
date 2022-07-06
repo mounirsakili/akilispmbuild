@@ -4,13 +4,13 @@ using AudienceNetwork;
 using UnityEngine.SceneManagement;
 using AudienceNetwork.Utility;
 
-public class joaquinlarson : garycagle
+public class franklinroper : louiefitzpatrick
 {
 
     private RewardedVideoAd rewardedVideoAd;
-    private bool gloriahoff;
+    private bool angelawaller;
 #pragma warning disable 0414
-    private bool wandaswenson;
+    private bool gabriellegagnon;
 #pragma warning restore 0414
 
     
@@ -19,11 +19,11 @@ public class joaquinlarson : garycagle
     private void Awake()
     {
         AudienceNetworkAds.Initialize();
-        marianofarley.stacygordon();
+        jasperaquino.charlenefry();
     }
 
     
-    public void gracielabeaver()
+    public void marcishaver()
     {
         statusLabel.text = "Loading rewardedVideo ad...";
 
@@ -50,10 +50,10 @@ public class joaquinlarson : garycagle
         rewardedVideoAd.RewardedVideoAdDidLoad = delegate ()
         {
             Debug.Log("RewardedVideo ad loaded.");
-            gloriahoff = true;
-            wandaswenson = false;
-            string jenniezavala = rewardedVideoAd.IsValid() ? "valid" : "invalid";
-            statusLabel.text = "Ad loaded and is " + jenniezavala + ". Click show to present!";
+            angelawaller = true;
+            gabriellegagnon = false;
+            string valerierogers = rewardedVideoAd.IsValid() ? "valid" : "invalid";
+            statusLabel.text = "Ad loaded and is " + valerierogers + ". Click show to present!";
         };
         rewardedVideoAd.RewardedVideoAdDidFailWithError = delegate (string error)
         {
@@ -86,7 +86,7 @@ public class joaquinlarson : garycagle
         rewardedVideoAd.RewardedVideoAdDidClose = delegate ()
         {
             Debug.Log("Rewarded video ad did close.");
-            wandaswenson = true;
+            gabriellegagnon = true;
             if (rewardedVideoAd != null)
             {
                 rewardedVideoAd.Dispose();
@@ -103,7 +103,7 @@ public class joaquinlarson : garycagle
          */
         rewardedVideoAd.RewardedVideoAdActivityDestroyed = delegate ()
         {
-            if (!wandaswenson)
+            if (!gabriellegagnon)
             {
                 Debug.Log("Rewarded video activity destroyed without being closed first.");
                 Debug.Log("Game should resume. User should not get a reward.");
@@ -118,10 +118,10 @@ public class joaquinlarson : garycagle
     
     public void ShowRewardedVideo()
     {
-        if (gloriahoff)
+        if (angelawaller)
         {
             rewardedVideoAd.Show();
-            gloriahoff = false;
+            angelawaller = false;
             statusLabel.text = "";
         }
         else
@@ -141,7 +141,7 @@ public class joaquinlarson : garycagle
     }
 
     
-    public void pamelaneumann()
+    public void aliceprater()
     {
         SceneManager.LoadScene("InterstitialAdScene");
     }
